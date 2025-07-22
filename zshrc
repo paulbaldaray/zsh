@@ -1,6 +1,8 @@
 # sfid
 eval "$(sf aliases)"
 
+export PATH="$HOME/Bin:$PATH"
+
 # Git information for prompt
 autoload -Uz compinit && compinit
 autoload -Uz vcs_info
