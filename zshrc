@@ -52,3 +52,7 @@ bindkey -v
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M viins 'fj' vi-cmd-mode
+bindkey -r '^L'
+bindkey -r '^D'
+bindkey -r '^U'
+bindkey -r '^R'
