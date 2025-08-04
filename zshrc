@@ -1,6 +1,4 @@
 # sfid
-eval "$(sf aliases)"
-
 typeset -U path
 path=(~/Bin $path)
 export ZSH_CONFIG_DIR="${0:A:h}"
