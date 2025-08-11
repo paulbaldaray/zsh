@@ -9,3 +9,5 @@ bindkey -r '^L'
 bindkey -r '^D'
 bindkey -r '^U'
 bindkey -r '^R'
+
+set disable-mouse on
