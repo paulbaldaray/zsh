@@ -13,3 +13,5 @@ bindkey -r '^R'
 set disable-mouse on
 bindkey -r '^[[A'
 bindkey -r '^[[B'
+bindkey -s '^[[A' ''
+bindkey -s '^[[B' ''
