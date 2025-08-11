@@ -6,11 +6,15 @@ export SHELL=$(which zsh)
 export TERM="tmux-256color"
 
 tinit() {
+  local session_name
+
   if [[ -z "$1" ]]; then
-    echo "Usage: tinit <session_name>"
-    return 1
+    session_name="home"
+  else
+    session_name="$1"
   fi
-  tmux new-session -s "$1" -n "$1"
+
+  tmux new-session -s "$session_name" -n "$session_name"
 }
 
 source "${ZSH_CONFIG_DIR}/prompt.zsh"
