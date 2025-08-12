@@ -3,7 +3,6 @@ typeset -U path
 path=(~/Bin $path)
 export ZSH_CONFIG_DIR="${0:A:h}"
 export SHELL=$(which zsh)
-export TERM="tmux-256color"
 
 tinit() {
   local session_name
