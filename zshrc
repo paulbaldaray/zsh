@@ -1,6 +1,7 @@
 # sfid
 typeset -U path
 path=(~/Bin $path)
+path=(~/go/bin $path)
 export ZSH_CONFIG_DIR="${0:A:h}"
 export SHELL=$(which zsh)
 
