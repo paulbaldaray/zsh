@@ -4,6 +4,7 @@ path=(~/Bin $path)
 path=(~/go/bin $path)
 export ZSH_CONFIG_DIR="${0:A:h}"
 export SHELL=$(which zsh)
+export CLAUDE_CODE_MAX_OUTPUT_TOKENS=64000
 
 tinit() {
   local session_name
