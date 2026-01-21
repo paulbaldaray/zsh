@@ -10,22 +10,22 @@ function print_vcs() {
 	msg=($(echo ${vcs_info_msg_0_}))
 	num=${#msg[@]}
 	[ "$num" -eq 0 ] && return
-	echo -n " %F{7}(%F{9}${msg[1]}%F{7})"
+	echo -n " %F{243}(%F{167}${msg[1]}%F{243})"
 	[ "$num" -eq 1 ] && return
-	echo -n "%F{7}[%F{11}"
+	echo -n "%F{243}[%F{178}"
 	for arg in ${msg[@]:1}; do
 		echo -n $arg
 	done
-	echo "%F{7}]"
+	echo "%F{243}]"
 }
 
-pstart="%F{9}["
-pname="%F{11}%n"
-psep="%F{10}@"
-pmachine="%F{14}%m"
-ppwd="%F{12}%1~"
-pend="%F{13}]"
-pprompt="%F{15}%#"
+pstart="%F{204}["
+pname="%F{178}%n"
+psep="%F{114}@"
+pmachine="%F{68}%m"
+ppwd="%F{169}%1~"
+pend="%F{140}]"
+pprompt="%F{249}%#"
 PROMPT="$pstart$pname$psep$pmachine $ppwd$pend\$(print_vcs)\$NEWLINE$pprompt "
 function zle-line-init zle-keymap-select {
 	echo -ne "${${KEYMAP/vicmd/\e[1 q}/(main|viins)/\e[5 q}"
